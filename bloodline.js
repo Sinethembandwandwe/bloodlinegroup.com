@@ -7,12 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
 });
 
-
+// Toggle Sidebar visibility
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('active');
 }
 
+// Close Sidebar when a navigation link is clicked
+function closeSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('active');
+}
+
+// Dropdown menu handling for "Our Services"
 document.addEventListener('DOMContentLoaded', () => {
     const servicesMenu = document.querySelector('nav ul li a[href="#services"]');
     const dropdown = servicesMenu.nextElementSibling;
@@ -39,3 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     });
 });
+
+// Show the "Back to Top" button when scrolling down
+window.addEventListener('scroll', () => {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (window.scrollY > 300) { // Show button when scrolled 300px down
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Scroll smoothly to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll
+    });
+}
