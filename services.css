@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+    background-color: #1c1c1c; /* Dark grey background */
+    color: #f5f5f5; /* Light gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading style */
+h2 {
+    color: #ff4d4d; /* Bright red for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px 20px;
+    background-color: #ff6666; /* Lighter red for list items */
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
+/* Back to Home link style */
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff1a1a; /* Dark red */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-home:hover {
+    background-color: #cc0000; /* Even darker red on hover */
+    text-decoration: underline;
+}
+
+.service-title {
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 12px 20px;
+    background-color: #ff6666; /* Same as list item */
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.product-details {
+    padding: 10px;
+    background-color: #a33d3d;; /* Light background for product details */
+    border-radius: 4px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px; /* Set a max width for the slideshow */
+    margin: auto;
+}
+
+.mySlides {
+    display: none; /* Hide all slides by default */
+}
+
+.fade {
+    transition: opacity 0.5s ease; /* Optional: Add fade effect */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px; /* Set a max width for the slideshow */
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* Dark background on hover */
+}

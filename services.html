@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <title>Our Services</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: red;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <div class="service-title" onclick="toggleProducts('tents')">Renting Tents</div>
+                <div class="product-details" id="tents" style="display: none;">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="3poles.jpeg" style="width:100%">
+                            <div class="text">Tent Model 1 - R2500</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="twopoles.jpg" style="width:100%">
+                            <div class="text">Tent Model 2 - R2000</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="stretchtent.jpeg" style="width:100%">
+                            <div class="text">Tent Model 3 - R2000</div>
+                        </div>
+                        <!-- Navigation -->
+                        <a class="prev" onclick="plusSlides(-1, 'tents')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'tents')">&#10095;</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <div class="service-title" onclick="toggleProducts('chairs')">Renting Chairs</div>
+                <div class="product-details" id="chairs" style="display: none;">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="chairs.jpeg" style="width:100%">
+                            <div class="text">Chair Model 1 - R500</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="chairsset.png" style="width:100%">
+                            <div class="text">Chair Model 2 - R500</div>
+                        </div>
+                        <!-- Navigation -->
+                        <a class="prev" onclick="plusSlides(-1, 'chairs')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'chairs')">&#10095;</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <div class="service-title" onclick="toggleProducts('brushcutter')">Lawn Mower</div>
+                <div class="product-details" id="brushcutter" style="display: none;">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="umshini.jpg" style="width:100%">
+                            <div class="text">Minimum- R780</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="brushcutter.jpg" style="width:100%">
+                            <div class="text">Minimum- R780</div>
+                        </div>
+                        <!-- Navigation -->
+                        <a class="prev" onclick="plusSlides(-1, 'brushcutter')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'brushcutter')">&#10095;</a>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- Other services can be added here -->
+        </ul>
+    
+        <!-- Back Home link -->
+        <a href="index.html" class="back-home">Back Home</a> 
+    </section>
+    
+    <!-- Load JavaScript at the end of body -->
+    <script src="services.js"></script> 
+    
+</body>
+</html>
