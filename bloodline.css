@@ -104,6 +104,13 @@ nav ul li ul li a:hover {
     display: none;
     flex-direction: column;
     color: #ffffff;
+    transition: transform 0.3s ease; /* Smooth transition for sliding in/out */
+    transform: translateX(-100%); /* Initially hidden off the screen */
+}
+
+.sidebar.active {
+    display: flex;
+    transform: translateX(0); /* Slide in when active */
 }
 
 .sidebar ul {
@@ -124,6 +131,7 @@ nav ul li ul li a:hover {
     text-decoration: underline;
 }
 
+/* Sidebar toggle button */
 .sidebar-toggle {
     display: block;
     position: absolute;
@@ -137,8 +145,16 @@ nav ul li ul li a:hover {
     z-index: 1000;
 }
 
-.sidebar.active {
-    display: flex;
+/* Close button (X) inside sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* Sections */
@@ -213,5 +229,37 @@ footer {
     100% {
         opacity: 1;
     }
+}
+/* Social Media Icons Styling */
+.footer-social a {
+    color: white; /* Icon color */
+    margin: 0 15px; /* Space between icons */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #cc3333; /* Change color when hovering */
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px; /* Position it near the bottom of the screen */
+    right: 20px;  /* Position it towards the right */
+    background-color: #8b0000; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: opacity 0.3s ease; /* Smooth transition when showing/hiding */
+}
+
+#back-to-top:hover {
+    background-color: #cc3333; /* Change color on hover */
 }
 
