@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloodline Company</title>
     <link rel="stylesheet" href="bloodline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     
 
 </head>
@@ -20,14 +22,17 @@
         <p>Your trusted partner for event rentals and services.</p>
     </header>
     <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
     <div class="sidebar" id="sidebar">
-        <ul>
-            <li><a href="#homepage">Home</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <button class="close-btn" onclick="closeSidebar()">X</button>
+    <ul>
+        <li><a href="#homepage" onclick="closeSidebar()">Home</a></li>
+        <li><a href="#services" onclick="closeSidebar()">Our Services</a></li>
+        <li><a href="#about" onclick="closeSidebar()">About Us</a></li>
+        <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
+    </ul>
     </div>
+
 
 
     <nav>
@@ -81,6 +86,27 @@
     </section>
 
     <footer>
+        
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+           
+    
+            <!-- Back to Top Button -->
+            <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+        </div>
         <p>&copy; 2024 Bloodline Group. All rights reserved.</p>
     </footer>
 
